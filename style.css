@@ -30,6 +30,7 @@
 .quantity.buttons_added .plus {
  padding: 7px 10px 8px;
  height: 100px;
+ width: 50px;
  background-color: #ffffff;
  border: 2px solid #efefef;
  cursor:pointer;}
