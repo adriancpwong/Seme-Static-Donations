@@ -4,6 +4,9 @@ function wcqib_refresh_quantity_increments() {
         c.addClass("buttons_added"), c.children().first().before('<input type="button" value="-" class="minus" />'), c.children().last().after('<input type="button" value="+" class="plus" />')
     })
 }
+function setTwoNumberDecimal(el) {
+        el.value = parseFloat(el.value).toFixed(2);
+    };
 String.prototype.getDecimals || (String.prototype.getDecimals = function() {
     var a = this,
         b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);

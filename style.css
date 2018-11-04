@@ -10,7 +10,7 @@
  text-align: center;
  background-color: transparent;
  border: 2px solid #efefef;
- font-size: 15px
+ font-size:48px !important;
 }
 
 .quantity.buttons_added {
