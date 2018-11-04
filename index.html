@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+
+<head>
+<script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="img_avatar.jpg" alt="avatar" style="width:75%">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="#">Donate</a>
+<a class="w3-bar-item w3-button" href="#">Sign in</a>
+<a class="w3-bar-item w3-button" href="#">Register</a>
+</nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1 class="w3-bar-item">SE:ME</h1>
+</header>
+
+<div class="w3-container" style="margin-top:120px">
+
+<center>
+Please choose an amount to donate:
+<br><br>
+    <div class="quantity buttons_added" >
+	<input type="button" value="-" class="minus"><input type="number" step="0.50" min="1.00" max="" name="quantity" value="2.00" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+</div>
+
+<br><br><br><br>
+
+
+<img src="https://www.symbilitysolutions.com/symbility-intersect/wp-content/uploads/sites/4/Screen-Shot-2017-07-19-at-3.27.57-PM.png" width='300px'><br><br>
+<img src="https://developers.google.com/pay/passes/images/save_to_google_pay_dark.png" width='300px'><br><br>
+<img src="http://www.pngall.com/wp-content/uploads/2016/05/PayPal-Donate-Button-PNG-HD.png" width='200px'><br><br>
+
+</center>
+<hr>
+
+<footer class="w3-container w3-bottom w3-theme w3-margin-top">
+  <h3></h3>
+</footer>
+
+<script>
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
