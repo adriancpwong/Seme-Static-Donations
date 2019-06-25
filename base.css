@@ -1,4 +1,20 @@
 #footer {
-    background: black;
+    background-color: #103f54;
     color: white;
+}
+body {
+    background-color: #bae9ff;
+}
+#full-width-container {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+#header-bar, #footer {
+    flex-shrink: 0;
+}
+#main-content {
+    flex-grow: 1;
+    padding-top: 2rem;
+    background-color: #efefef;
 }
