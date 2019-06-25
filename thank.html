@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="base.css" >
     <style>
     #signup-link {
-        padding-top: 3rem;
         padding-bottom: 3rem;
     }
     </style>
@@ -38,18 +37,22 @@
         </nav>
         <div class="container" id="main-content">
             <h1 style="padding-bottom: 2.5rem">Thank you for your donation!</h1>
-
-            <a href="signup.html" id="signup-link">&lt;&lt; Please considering registering with us &gt;&gt;</a>
-
-            <span>or</span>
-            
-Log in:<br><br>
-<form>
-Username: <input type="text" name="Username"><br><br>
-Password: <input type="password" name="Password"><br><br>
-<a href="dashboard.html"><input type="button" value="Submit"></a>
-</form>
-<br><br>
+            <div class="d-flex justify-content-center">
+                <a href="signup.html" id="signup-link">&lt;&lt; Please considering registering with us &gt;&gt;</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span>or</span>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h3>Log In</h3>
+                        <form>
+                            Username: <input type="text" name="Username"><br><br>
+                            Password: <input type="password" name="Password"><br><br>
+                            <a href="dashboard.html"><input type="button" value="Submit"></a>
+                        </form>
+                    </div>
+            </div>
 </div>
 <footer id="footer">
     <h6>(c) 2018 SE:ME All Rights Reserved </h6>
