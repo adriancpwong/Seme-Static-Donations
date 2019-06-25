@@ -1,7 +1,11 @@
 /* -- quantity box -- */
 
 .quantity {
- display: inline-block; }
+ display: inline-block;
+}
+.quantity.buttons_added {
+    font-size: 48px;
+}
 
 .quantity .input-text.qty {
  width: 200px;
@@ -10,7 +14,6 @@
  text-align: center;
  background-color: transparent;
  border: 2px solid #efefef;
- font-size:48px !important;
 }
 
 .quantity.buttons_added {
@@ -31,7 +34,7 @@
  padding: 7px 10px 8px;
  height: 100px;
  width: 50px;
- font-size:36px !important;
+ font-size:36px;
  background-color: #ffffff;
  border: 2px solid #efefef;
  cursor:pointer;}
