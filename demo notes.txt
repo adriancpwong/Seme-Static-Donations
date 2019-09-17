@@ -1,0 +1,2 @@
+*Make lines bigger (amount selection)
+*Add pound sign in front of value
