@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Thank you!</title>
+<title>Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="classes.css">
@@ -17,12 +17,28 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   margin-right: auto;
   width: 50%;
 }
+.centernocompress {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 51%;
+}
 .name-shadow {
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 4px #7e7e7e;
 }
 .rounded-corners{
   border-radius: 50%;
+}
+.closebtn {
+  margin-left: 15px;
+  color: rgb(170, 170, 170);
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 </style>
@@ -37,33 +53,118 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 			<div>
 					<a href="http://www.semescotland.co.uk"><img src="logoo.png" style="width:25%" class="center"></a>
-			</div><br>
+            </div><br>
+
 		
 	  <div class="w3-white w3-text-grey w3-card-4">
 		<div class="w3-display-container">
-			<br>
-		  <div class="w3-container" align="middle">
-			<br>
-			<i class="fa fa-check-circle-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
-			<br>
-			<br>
-			<h2 class="w3-text-black">Thank you for your donation!</h2>
-		  </div>
+				<nav class="navbar navbar-white bg-white navbar-expand-lg centernocompress" id="header-bar">
+						
+																<ul class="navbar-nav mr-auto">
+																		<li class="nav-item">
+																				<a class="nav-link" href="dashboard.html">Sign in</a>
+																		</li>
+																		<li class="nav-item">
+																				<a class="nav-link" href="signup.html">Register</a>
+																		</li>
+																		<li class="nav-item">
+																			<a class="nav-link" href="about.html">About Us</a>
+																		</li>
+																		
+																</ul>
+																<hr>
+												</nav>
+		</div>
+		<div class="alert alert-success" align="middle">
+			  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				Welcome back!
 		</div>
 		<div class="w3-container" align = "middle">
-			<p>You've helped Gregory get one step closer to reaching his goal.</p>
-			<br>
-			<h4>Donation goal</h4>
-			<div class="w3-light-grey w3-round-xlarge w3-small" align="left">
-			  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:71%">£142 / £200</div>
-			</div>
-			<br>
-			<br>
-			<a href="https://www.semescotland.co.uk/our-beneficiaries/"><p>Find out more about Gregory and other beneficiaries</p></a>
-			<a href="http://www.semescotland.co.uk"><p>Find out more about our business and team</p></a>
-			<a href="https://app.semescotland.co.uk/auth/signup"><p>Log in or sign up</p></a>
-			<a href="dashboardnew.html"><p>Preview our app</p></a>
-			
+        <div class="w3-container">
+					<br>
+            <h1>Dashboard</h1>
+						<br>
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h3>Your previous donations:</h3>
+                </div>
+
+            </div> 
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Date</th> 
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <td>3/11/2018</td>
+        <td>1.50</td>
+    </tr>
+    <tr>
+        <td>2/11/2018</td>
+        <td>2.50</td>  
+    </tr>
+    <tr>
+        <td>1/11/2018</td>
+        <td>1.00</td>
+    </tr>
+    <tr>
+        <td>31/10/2018</td>
+        <td>1.50</td>
+    </tr>
+    <tr>
+        <td>30/10/2018</td>
+        <td>3.50</td>
+    </tr>
+    <tr>
+        <td>29/10/2018</td>
+        <td>5.00</td>
+    </tr>
+    <tr>
+        <td>28/10/2018</td>
+        <td>2.50</td>
+    </tr>
+    <tr>
+        <td>27/10/2018</td>
+        <td>2.50</td>
+    </tr>
+    <tr>
+        <td>26/10/2018</td>
+        <td>2.00</td>
+    </tr>
+</table>
+<br>
+<div class="d-flex justify-content-center">
+		<div>
+				<h3>Top donors this week:</h3>
+		</div>
+</div> 
+<table class="table table-striped table-bordered">
+  <tr>
+    <th>Amount</th>
+    <th>Name</th> 
+  </tr>
+  <tr>
+    <td>1624.50</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>1200.00</td>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <td>1001.00</td>
+    <td>Jacob</td>
+  </tr>
+    <tr>
+    <td>677.50</td>
+    <td>Janice</td>
+  </tr>
+  <tr>
+    <td>310.50</td>
+    <td>Joseph</td>
+  </tr>
+</table>
+</div>
 
 		  
 		  <br>
