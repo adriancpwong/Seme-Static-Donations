@@ -40,7 +40,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   animation-name: fadeIn;
   animation-duration: 0.4s
 }
-
 /* Modal Content */
 .modal-content {
   position: fixed;
@@ -52,7 +51,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   animation-name: slideIn;
   animation-duration: 0.4s
 }
-
 /* The Close Button */
 .close {
   color: white;
@@ -60,99 +58,87 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #c5c5c5;
   color: white;
 }
-
 .modal-body {padding: 2px 16px;}
-
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #c5c5c5;
   color: white;
 }
-
 /* Add Animation */
 @-webkit-keyframes slideIn {
   from {bottom: -300px; opacity: 0} 
   to {bottom: 0; opacity: 1}
 }
-
 @keyframes slideIn {
   from {bottom: -300px; opacity: 0}
   to {bottom: 0; opacity: 1}
 }
-
 @-webkit-keyframes fadeIn {
   from {opacity: 0} 
   to {opacity: 1}
 }
-
 @keyframes fadeIn {
   from {opacity: 0} 
   to {opacity: 1}
 }
 </style>
 <body class="w3-light-grey">
-
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
-    
-    <!-- Left Column -->
-    <div class="w3-third" style="margin:0px auto;">
-    
+	<!-- Left Column -->
+	<div class="w3-third" style="margin:0px auto;">
+	  <div>
+		<img src="logoo.png" style="width:25%" class="center"> 
+	  </div><br>
+		
+	  <div class="w3-white w3-text-grey w3-card-4">
+		<div class="w3-display-container">
+			<br>
+		  <img src="test.jpg" style="width:30%; border-radius: 50%" class="center" alt="Avatar">
+		  <div class="w3-container" align="middle">
+			<br>
+			<h2 class="w3-text-black">Gregory</h2>
+		  </div>
+		</div>
+		<div class="w3-container" align = "middle">
 
-            <div>
-                      <img src="logoo.png" style="width:25%" class="center"> 
-            </div><br>
-        
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-            <br>
-          <img src="test.jpg" style="width:30%; border-radius: 50%" class="center" alt="Avatar">
-          <div class="w3-container" align="middle">
-            <br>
-            <h2 class="w3-text-black">Gregory</h2>
-          </div>
-        </div>
-        <div class="w3-container" align = "middle">
+			<p>This is a placeholder beneficiary quote.</p>
+			
+			<h4>Donation goal</h4>
+			<div class="w3-light-grey w3-round-xlarge w3-small" align="left">
+			  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">£140 / £200</div>
+			</div>
+			<br>
+			
+		  <div>
+				<div class="quantity buttons_added d-flex justify-content-center align-content-center" >
+				  <input type="button" value="-" class="minus" style="width:12%; border-top-left-radius: 30px; border-bottom-left-radius: 30px">
+				  <input type="number" step="0.50" min="1.00" style="width:40%" max="10.00" name="quantity" value="2.00" title="Qty" onchange="setTwoNumberDecimal(this)" class="input-text qty text" size="4" pattern="" inputmode="">
+				  <input type="button" value="+" class="plus" style="width:12%; border-top-right-radius: 30px; border-bottom-right-radius: 30px">
+				</div>
+		  </div>
+		  
+		  <a class="nav-link" href="thanks.html"></a>
+		  <input type="image" id="myBtn" src="donate.jpg" style="width:30%; border-radius: 30px" class="center">
+		  <br>
+		</div>
+	  </div><br>
+	  
 
-            <p>This is a placeholder beneficiary quote.</p>
-            <br>
-            <h4>Donation goal</h4>
-            <div class="w3-light-grey w3-round-xlarge w3-small" align="left">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">£140 / £200</div>
-            </div>
-            <br>
-            <br>
-          <div>
-                <div class="quantity buttons_added d-flex justify-content-center align-content-center" >
-                  <input type="button" value="-" class="minus" style="width:12%; border-top-left-radius: 30px; border-bottom-left-radius: 30px">
-                  <input type="number" step="0.50" min="1.00" style="width:40%" max="10.00" name="quantity" value="2.00" title="Qty" onchange="setTwoNumberDecimal(this)" class="input-text qty text" size="4" pattern="" inputmode="">
-                  <input type="button" value="+" class="plus" style="width:12%; border-top-right-radius: 30px; border-bottom-right-radius: 30px">
-                </div>
-          </div>
-          <br>
-          <a class="nav-link" href="thanks.html"></a>
-          <button id="myBtn"><img src="donate.jpg" style="width:30%; border-radius: 30px" class="center"></button>
-          <br>
-        </div>
-      </div><br>
-      
-
-    <!-- End Left Column -->
-    </div>
-    
+	<!-- End Left Column -->
+	</div>
+	
   <!-- End Grid -->
   </div>
   
@@ -160,23 +146,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </div>
 
 <div id="myModal" class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div>
-      </div>
-    
-    </div>
+	
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <span class="close">&times;</span>
+		</div>
+		<div class="modal-body">
+		  <p>PayPal</p>
+		  <p>Apple Pay</p>
+		  <p>Google Pay</p>
+		  <p>Skip</p>
+		</div>
+		<div class="modal-footer">
+		</div>
+	  </div>
+	
+	</div>
 <footer class="w3-container w3-teal w3-center w3-margin-top">
   <p>Find out more on social media.</p>
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -191,30 +177,30 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
 function wcqib_refresh_quantity_increments() {
-        jQuery("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").each(function(a, b) {
-            var c = jQuery(b);
-            c.addClass("buttons_added"), c.children().first().before('<input type="button" value="-" class="minus" />'), c.children().last().after('<input type="button" value="+" class="plus" />')
-        })
-    }
-    function setTwoNumberDecimal(el) {
-            el.value = parseFloat(el.value).toFixed(2);
-        };
-    String.prototype.getDecimals || (String.prototype.getDecimals = function() {
-        var a = this,
-            b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
-        return b ? Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0)) : 0
-    }), jQuery(document).ready(function() {
-        wcqib_refresh_quantity_increments()
-    }), jQuery(document).on("updated_wc_div", function() {
-        wcqib_refresh_quantity_increments()
-    }), jQuery(document).on("click", ".plus, .minus", function() {
-        var a = jQuery(this).closest(".quantity").find(".qty"),
-            b = parseFloat(a.val()),
-            c = parseFloat(a.attr("max")),
-            d = parseFloat(a.attr("min")),
-            e = a.attr("step");
-        b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
-    });
+		jQuery("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").each(function(a, b) {
+			var c = jQuery(b);
+			c.addClass("buttons_added"), c.children().first().before('<input type="button" value="-" class="minus" />'), c.children().last().after('<input type="button" value="+" class="plus" />')
+		})
+	}
+	function setTwoNumberDecimal(el) {
+			el.value = parseFloat(el.value).toFixed(2);
+		};
+	String.prototype.getDecimals || (String.prototype.getDecimals = function() {
+		var a = this,
+			b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+		return b ? Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0)) : 0
+	}), jQuery(document).ready(function() {
+		wcqib_refresh_quantity_increments()
+	}), jQuery(document).on("updated_wc_div", function() {
+		wcqib_refresh_quantity_increments()
+	}), jQuery(document).on("click", ".plus, .minus", function() {
+		var a = jQuery(this).closest(".quantity").find(".qty"),
+			b = parseFloat(a.val()),
+			c = parseFloat(a.attr("max")),
+			d = parseFloat(a.attr("min")),
+			e = a.attr("step");
+		b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
+	});
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
@@ -226,7 +212,7 @@ span.onclick = function() {
 }
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+	modal.style.display = "none";
   }
 }
 </script>
