@@ -113,7 +113,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 		</div>
 		<div class="w3-container" align = "middle">
 
-			<p>This is a placeholder beneficiary quote.</p>
+			<p>Hi there, my name's Greg. I am currently unemployed and homeless</p>
 			
 			<h4>Donation goal</h4>
 			<div class="w3-light-grey w3-round-xlarge w3-small" align="left">
@@ -128,8 +128,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 				  <input type="button" value="+" class="plus" style="width:12%; border-top-right-radius: 30px; border-bottom-right-radius: 30px">
 				</div>
 		  </div>
-		  
-		  <a class="nav-link" href="thanks.html"></a>
+		  <br>
 		  <input type="image" id="myBtn" src="donate.jpg" style="width:30%; border-radius: 30px" class="center">
 		  <br>
 		</div>
@@ -150,19 +149,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 	  <!-- Modal content -->
 	  <div class="modal-content">
 		<div class="modal-header">
+			<h3 align = "left">Payment options</h3>
 		  <span class="close">&times;</span>
 		</div>
 		<div class="modal-body">
-		  <p>PayPal</p>
-		  <p>Apple Pay</p>
-		  <p>Google Pay</p>
-		  <p>Skip</p>
+		  <p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick" />
+			<input type="hidden" name="hosted_button_id" value="5QHG9E8SQ7AM2" />
+			<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+			<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+			</form></p>
+		  <p><a href="thanks.html">Skip</a></p>
 		</div>
 		<div class="modal-footer">
 		</div>
 	  </div>
-	
 	</div>
+
+
+
+
+
 <footer class="w3-container w3-teal w3-center w3-margin-top">
   <p>Find out more on social media.</p>
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
