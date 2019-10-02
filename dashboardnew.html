@@ -21,7 +21,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 51%;
 }
 .name-shadow {
   color: rgb(0, 0, 0);
@@ -40,138 +39,195 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   cursor: pointer;
   transition: 0.3s;
 }
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 </style>
+
 <body class="w3-light-grey">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
-	
 	<!-- Left Column -->
 	<div class="w3-third" style="margin:0px auto;">
-	
-
 			<div>
-					<a href="http://www.semescotland.co.uk"><img src="logoo.png" style="width:25%" class="center"></a>
-            </div><br>
+				<a href="http://www.semescotland.co.uk"><img src="logoo.png" style="width:25%" class="center"></a>
+			</div>
+			<br>
 
-		
-	  <div class="w3-white w3-text-grey w3-card-4">
-		<div class="w3-display-container">
-				<nav class="navbar navbar-white bg-white navbar-expand-lg centernocompress" id="header-bar">
-						
-																<ul class="navbar-nav mr-auto">
-																		<li class="nav-item">
-																				<a class="nav-link" href="dashboardnew.html">Sign in</a>
-																		</li>
-																		<li class="nav-item">
-																				<a class="nav-link" href="dashboardnew.html">Register</a>
-																		</li>
-																		<li class="nav-item">
-																			<a class="nav-link" href="dashboardnew.html">About Us</a>
-																		</li>
-																		
-																</ul>
-																<hr>
-												</nav>
-		</div>
-		<div class="alert alert-success" align="middle">
-			  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+	  		<div class="w3-white w3-text-grey w3-card-4">
+			<div class="w3-display-container">
+				<nav class="navbar navbar-expand-lg centernocompress">
+					<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-link" href="https://app.semescotland.co.uk/">Sign in</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://app.semescotland.co.uk/">Register</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://www.semescotland.co.uk/about-us/">About Us</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://forms.gle/KAT9ZM9UVN6hEAfr9">Take our survey</a>
+					</li>	
+					</ul>
+					<hr>
+				</nav>
+			</div>
+			<div class="d-flex justify-content-center"><h1>Dashboard</h1></div>
+			<div class="alert alert-success" align="middle">
+			  	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
 				Welcome back!
+			</div>
+			</div>
+			<br>
+	
+			<div class="w3-white w3-text-grey w3-card-4">
+					<div class="w3-display-container">
+						<div class="w3-container" align = "middle">
+							<div class="w3-container">
+								<br>
+		  <h3>You have: <u>743 me points</u></h3>
+		  <p>You can use your points to redeem select rewards at any participating partner.</p>
 		</div>
-		<div class="w3-container" align = "middle">
-        <div class="w3-container">
+	</div>
+	</div>
+	</div>
+	<br>
+
+
+
+<div class="w3-white w3-text-grey w3-card-4">
+		<div class="w3-display-container">
+			<div class="w3-container" align = "middle">
+				<div class="w3-container">
 					<br>
-            <h1>Dashboard</h1>
-						<br>
-            <div class="d-flex justify-content-center">
-                <div>
-                    <h3>Your previous donations:</h3>
-                </div>
-
-            </div> 
-<table class="table table-striped table-bordered">
-    <tr>
-        <th>Date</th> 
-        <th>Amount</th>
-    </tr>
-    <tr>
-        <td>3/11/2018</td>
-        <td>1.50</td>
-    </tr>
-    <tr>
-        <td>2/11/2018</td>
-        <td>2.50</td>  
-    </tr>
-    <tr>
-        <td>1/11/2018</td>
-        <td>1.00</td>
-    </tr>
-    <tr>
-        <td>31/10/2018</td>
-        <td>1.50</td>
-    </tr>
-    <tr>
-        <td>30/10/2018</td>
-        <td>3.50</td>
-    </tr>
-    <tr>
-        <td>29/10/2018</td>
-        <td>5.00</td>
-    </tr>
-    <tr>
-        <td>28/10/2018</td>
-        <td>2.50</td>
-    </tr>
-    <tr>
-        <td>27/10/2018</td>
-        <td>2.50</td>
-    </tr>
-    <tr>
-        <td>26/10/2018</td>
-        <td>2.00</td>
-    </tr>
-</table>
-<br>
-<div class="d-flex justify-content-center">
-		<div>
-				<h3>Top donors this week:</h3>
-		</div>
-</div> 
-<table class="table table-striped table-bordered">
-  <tr>
-    <th>Amount</th>
-    <th>Name</th> 
-  </tr>
-  <tr>
-    <td>1624.50</td>
-    <td>John</td>
-  </tr>
-  <tr>
-    <td>1200.00</td>
-    <td>Jack</td>
-  </tr>
-  <tr>
-    <td>1001.00</td>
-    <td>Jacob</td>
-  </tr>
-    <tr>
-    <td>677.50</td>
-    <td>Janice</td>
-  </tr>
-  <tr>
-    <td>310.50</td>
-    <td>Joseph</td>
-  </tr>
-</table>
+<h3>How your money is being spent:</h3>
+<div id="piechart"></div>
 </div>
+</div>
+</div>
+</div>
+<br>
 
-		  
-		  <br>
+
+	<div class="w3-white w3-text-grey w3-card-4">
+		<div class="w3-display-container">
+			<div class="w3-container" align = "middle">
+				<div class="w3-container">
+					<br>
+					<div class="d-flex justify-content-center">
+						<div>
+							<h3>Your previous donations:</h3>
+						</div>
+		
+					</div> 
+		<table class="table table-striped table-bordered">
+			<tr>
+				<th>Date</th> 
+				<th>Amount</th>
+			</tr>
+			<tr>
+				<td>3/11/2019</td>
+				<td>1.50</td>
+			</tr>
+			<tr>
+				<td>2/11/2019</td>
+				<td>2.50</td>  
+			</tr>
+			<tr>
+				<td>1/11/2019</td>
+				<td>1.00</td>
+			</tr>
+			<tr>
+				<td>31/10/2019</td>
+				<td>1.50</td>
+			</tr>
+			<tr>
+				<td>30/10/2019</td>
+				<td>3.50</td>
+			</tr>
+			<tr>
+				<td>29/10/2019</td>
+				<td>5.00</td>
+			</tr>
+			<tr>
+				<td>28/10/2019</td>
+				<td>2.50</td>
+			</tr>
+			<tr>
+				<td>27/10/2019</td>
+				<td>2.50</td>
+			</tr>
+			<tr>
+				<td>26/10/2019</td>
+				<td>2.00</td>
+			</tr>
+		</table>
 		</div>
-	  </div><br>
-	  
+			</div>
+		  </div>
+		  </div>
+<br>
 
+<div class="w3-white w3-text-grey w3-card-4">
+		<div class="w3-display-container">
+			<div class="w3-container" align = "middle">
+				<div class="w3-container">
+					<br>
+					<div class="d-flex justify-content-center">
+					<h3>Top donors this week:</h3>
+					</div> 
+			<table class="table table-striped table-bordered">
+			  <tr>
+				<th>Amount</th>
+				<th>Name</th> 
+			  </tr>
+			  <tr>
+				<td>1624.50</td>
+				<td>John</td>
+			  </tr>
+			  <tr>
+				<td>1200.00</td>
+				<td>Jack</td>
+			  </tr>
+			  <tr>
+				<td>1001.00</td>
+				<td>Jacob</td>
+			  </tr>
+				<tr>
+				<td>677.50</td>
+				<td>Janice</td>
+			  </tr>
+			  <tr>
+				<td>310.50</td>
+				<td>Joseph</td>
+			  </tr>
+			</table>
+		</div>
+		</div>
+		</div>
+		</div>
 	<!-- End Left Column -->
 	</div>
 	
@@ -218,7 +274,50 @@ function wcqib_refresh_quantity_increments() {
 			e = a.attr("step");
 		b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
 	});
-	</script>
+</script>
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Money spent'],
+  ['Groceries', 8],
+  ['Travel', 1],
+  ['Accomodation', 4],
+  ['Clothes', 2],
+  ['Healthcare', 3]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
 
 </body>
 </html>
